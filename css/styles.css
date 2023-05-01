@@ -1,0 +1,20 @@
+:root{
+    --primary-color:#f9ad3e;
+    --azul-claro:#4bacc1;
+    --secundary-color-light:#fffac7;
+    --secundary-color:#fff650;
+    --oscuro:#175a65;
+    --text-color:#ffffff;
+    --text-color-inverse: #000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*https://cssgradient.io podras crear gradientes de formas rapida 
+y personalizada*/
+body {
+    font-family: sans-serif;
+  }
+  

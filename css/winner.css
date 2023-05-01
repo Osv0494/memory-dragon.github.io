@@ -1,0 +1,56 @@
+.winner{
+    width: 100%;
+    height: 100vh;
+    background: rgb(75,172,193);
+    background: radial-gradient(circle, rgba(75,172,193,1) 0%, rgba(23,90,101,1) 100%);
+    display: none;/*grid*/
+    place-items: center;
+}
+.winner-title{
+    font-size: 40px;
+    font-family: Sans;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: -100px;
+}
+
+.winner_stars{
+    width: 300px;  
+    height: 50px;
+    margin-top: -100px;
+}
+.winner_dragonfly{
+    width: 300px;
+    height: 300px;
+
+}
+.winner-btn{
+    font-family: Sans;
+    font-size: 35px;
+    padding: 5px;
+    color: var(--primary-color);
+    background-color: var(--secundary-color-light);
+    border: 3px solid var(--primary-color);
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: -100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media (min-width: 750px){
+    .winner-title{
+        font-size: 70px;
+    }
+    
+    .winner_stars{
+        width: 600px;  
+    }
+    .winner_dragonfly{
+        width: 500px;
+        height: 500px;
+    
+    }
+    .winner-btn{
+        font-size: 50px;
+    }
+}

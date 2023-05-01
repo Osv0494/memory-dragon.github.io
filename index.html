@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game Dragos</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script defer src="js/typed.js"></script>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/presentation.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/winner.css">
+    <link rel="stylesheet" href="css/failed.css">
+    <link rel="stylesheet" href="css/finally.css">
+</head>
+<body>
+  <section class="presentation">
+      <h2 class="presentation-body_words"><span id="typewriter"></span></h2>
+      <lottie-player class="presentation-body_dragonfly" src="https://assets5.lottiefiles.com/datafiles/kRhvpsl7lHKUn6dPxM4o5TOHuR8hAzkLqdMhyR9Q/animation.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+    <button class="start-game_btn">Start Game</button>
+  </section>
+  <section class="game">
+      <h1 class="game_title">The Dragons</h1> 
+      <table class="game-body_table">
+        <tr>
+          <td><button class="game-box" id="0" onclick="destapar(0)"></button></td>
+          <td><button class="game-box" id="1" onclick="destapar(1)"></button></td>
+          <td><button class="game-box" id="2" onclick="destapar(2)"></button></td>
+          <td><button class="game-box" id="3" onclick="destapar(3)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="game-box" id="4" onclick="destapar(4)"></button></td>
+          <td><button class="game-box" id="5" onclick="destapar(5)"></button></td>
+          <td><button class="game-box" id="6" onclick="destapar(6)"></button></td>
+          <td><button class="game-box" id="7" onclick="destapar(7)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="game-box" id="8" onclick="destapar(8)"></button></td>
+          <td><button class="game-box" id="9" onclick="destapar(9)"></button></td>
+          <td><button class="game-box" id="10" onclick="destapar(10)"></button></td>
+          <td><button class="game-box" id="11" onclick="destapar(11)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="game-box" id="12" onclick="destapar(12)"></button></td>
+          <td><button class="game-box" id="13" onclick="destapar(13)"></button></td>
+          <td><button class="game-box" id="14" onclick="destapar(14)"></button></td>
+          <td><button class="game-box" id="15" onclick="destapar(15)"></button></td>
+        </tr>
+      </table>
+      <div class="game-statistics">
+        <div class="statis" id="aciertos" class="game-statistics_correct">Correct: <b class="number">0</b></div>
+        <div class="statis" id="t-restante" class="game-statistics_timer">Timer: <b class="number">60 s</b></div>
+        <div class="statis" id="movimientos" class="game-statistics_movements1">Shift: <b class="number">0</b></div>
+      </div>
+      <div class="game-anime-btn">
+      <lottie-player class="game-anime" src="https://assets6.lottiefiles.com/datafiles/79YVXEKLbyXqdNpBhLN2HNpIaf0riunhFmey8w9J/animation.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+      <div class="game-anime-btn-right">
+     <div class="game-anime_words">Good Luck!</div>
+     <div class="game-btn">
+     <button class="game-btn-restart">Restart</button>
+     <button class="game-btn-finish">Finish</button>
+    </div>
+    </div>
+</div>
+  </section>
+  <section class="winner">
+    <lottie-player class="winner_dragonfly" src="https://assets7.lottiefiles.com/datafiles/rP2cvgaeAxOVX3PWBy2HkeaAiWYWlOfs4siETN8H/Animation.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+    <div class="winner-title">Congratulations!</div>
+    <lottie-player class="winner_stars" src="https://assets10.lottiefiles.com/packages/lf20_xeicuecf.json"  background="transparent"  speed="1" Loop autoplay></lottie-player>
+    <button class="winner-btn">Continue</button>
+  </section>
+  <section class="failed">
+    <lottie-player class="failed_anime" src="https://assets1.lottiefiles.com/datafiles/w6iRO3X4bUd71c8WhIdAipc4b7fZaNekKEyjbQ1L/Animation.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+    <div class="failed_title"> Your time is up!</div>
+    <button class="failed_btn">Try Again</button>
+  </section>
+  <section class="finally">
+    <div class="finally_title">Thanks for visiting us,<br> come back soon!</div>
+    <lottie-player class="finally_dragonfly" src="https://assets5.lottiefiles.com/datafiles/kRhvpsl7lHKUn6dPxM4o5TOHuR8hAzkLqdMhyR9Q/animation.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+    <button class="finally_btn"><a href="">Close</a></button>
+  </section>
+</body>
+</html>
